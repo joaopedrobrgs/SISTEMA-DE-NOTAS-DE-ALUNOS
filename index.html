@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE NOTAS DE ESCOLA</title>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="pageContainer">
+
+        <!-- Cabeçalho -->
+
+        <header>
+            <h1>NOTAS DA TURMA (MÉDIA = 7.0)</h1>
+        </header>
+
+        <!-- Sessão para inserir dados dos alunos -->
+
+        <section id="enterData">
+
+            <form id="form1">
+
+                <div class="inputData">
+                    <h3>Nome do aluno: </h3>
+                    <input id="inputName" type="text">
+                </div>
+
+                <div class="inputData">
+                    <h3>Nota P1 (3 pts): </h3>
+                    <input id="inputP1" type="number" min="0" max="3">
+                </div>
+
+                <div class="inputData">
+                    <h3>Nota P2 (3 pts): </h3>
+                    <input id="inputP2" type="number" min="0" max="3">
+                </div>
+
+                <div class="inputData">
+                    <h3>Nota Trabalhos (4 pts): </h3>
+                    <input id="inputT" type="number" min="0" max="4">
+                </div>
+
+                <div class="inputData">
+                    <input id="register" type="button" value="cadastrar aluno">
+                </div>
+
+            </form>
+
+        </section>
+
+        <section id="printData">
+
+            <div id="categories">
+                <span class="nameCategory">Nome do Aluno</span><span class="otherCategories">P1</span><span
+                    class="otherCategories">P2</span><span class="otherCategories">Trabalhos</span><span
+                    class="otherCategories">Total</span><span class="otherCategories">Resultado</span><span
+                    id="notToPrint" class="otherCategories">Apagar Aluno</span>
+            </div>
+
+            <hr>
+
+            <div id="data"></div>
+
+        </section>
+
+        <section id="eraseData">
+            <button id="eraseDataButton">Apagar todos os dados</button>
+        </section>
+
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+#pageContainer {
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+    header {
+        background-color: aliceblue;
+    }
+
+        header h1 {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+/* INPUTS */
+
+    #enterData {
+        background-color: white;
+        text-align: center;
+    }
+
+        .inputData {
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .inputData h3 {
+            padding-right: 10px;
+            display: inline;
+        }
+
+        input {
+            margin-right: 10px;
+            padding: 2px;
+        }
+
+        input[type="number"]{
+            width: 50px;
+        }
+
+/* ADD DATA */
+
+    #printData {
+        background-color: aliceblue;
+    }
+
+    hr{
+        background-color: black;
+        border: 0.5px solid black;
+    }
+
+        #categories {
+            width: 100%;
+            text-align: center;
+        }
+
+
+        #data{
+            width: 100%;
+            text-align: center;
+        }
+
+            #categories span{
+                font-weight: 700;
+                display: inline-block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 19px;
+            }
+
+            #data span{
+                font-weight: 400;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 40px;
+            }
+
+                .nameCategory{
+                    width: 40%;
+                }
+
+                .otherCategories{
+                    width: 10%;
+                }
+
+/* ERASE DATA */
+
+#eraseData{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+    #eraseData button{
+        padding: 2px;
+    }
+
+    #eraseOneStudentContainer{
+        display: inline-block;
+        width: 10%;
+    }
+
+/*PRINT PAGE*/
+
+@media print {
+    body * {
+        visibility:hidden;
+    }
+
+    #enterData{
+        visibility:hidden;
+        display: none;
+    }
+
+    header, header * {
+        visibility: visible;
+    }
+
+    #printData, #printData *{
+        visibility: visible;
+    }
+
+    #eraseOneStudent, #eraseOneStudent *{
+        visibility:hidden;
+    }
+
+    #notToPrint, #notToPrint *{
+        visibility:hidden;
+    }
+
+}
+
+/* MOBILES AND OTHER DEVICES */
+
+@media screen and (max-width: 800px) {
+
+    .nameCategory{
+        width: 34%;
+    }
+
+    .otherCategories{
+        width: 11%;
+    }
+
+    #eraseOneStudentContainer{
+        width: 11%;
+    }
+
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    #enterData {
+        font-size: 10px;
+    }
+
+    input{
+        font-size: 10px;
+    }
+
+    #categories span{
+        font-size: 10px;
+    }
+
+    #data span{
+        font-size: 10px;
+    }
+
+    #eraseOneStudent{
+        font-size: 10px;
+    }
+
+    #eraseData button{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 381px) {
+
+    .nameCategory{
+        width: 22%;
+    }
+
+    .otherCategories{
+        width: 13%;
+    }
+
+    #eraseOneStudentContainer{
+        width: 13%;
+    }
+
+}
+
+@media screen and (max-width: 315px) {
+
+
+    #categories span{
+        font-size: 3vw;
+    }
+
+    #data span{
+        font-size: 3vw;
+    }
+
+    #eraseOneStudent{
+        font-size: 3vw;
+    }
+
+    #eraseData button{
+        font-size: 3vw;
+    }
+
+}
